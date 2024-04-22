@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022103885 이승미: 웹디자인 과제 URL</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <span class="title-bubble">Hello 👋</span>
+            <h1>웹디자인 강의<br />과제 제출용 <strong>Web Page</strong>입니다</h1>
+            <span>2022103885 이승미</span>
+        </header>
+        <div class="tab-container">
+            <ul class="tab-list">
+                <li class="tab-link active" data-tab="tab-1">
+                    <div class="deco">
+                        책소개
+                    </div>
+                </li>
+                <li class="tab-link" data-tab="tab-2">
+                    <div class="deco">
+                        캐릭터 사이트
+                    </div>
+                </li>
+                <li class="tab-link" data-tab="tab-3">
+                    <div class="deco">
+                        포트폴리오
+                    </div>
+                </li>
+            </ul>
+            <div class="tab-box">
+                <div id="tab-1" class="tab-content active">
+                    <div class="tab-wrap">
+                        <div class="img-box">
+                            <img src="./book/book-img.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3 class="tab-title">HTML활용하여 책 소개하기</h3>
+                            <ul class="info">
+                                <li class="info-obj">
+                                    <span class="info-title">과제 내용</span>
+                                    <p>3차시에서 구축한 자신만의 도메인에, 5차시 과제. HTML 활용하여 책 소개하기를 작성해 업로드 <br /><br />
+                                        페이지 작성 방법은 5차시 강의 내용을 참고, 마감일 전에 과제물 제출 란에, URL 주소 남기기
+                                    </p>
+                                    
+                                </li>
+                                <li class="info-obj">
+                                    <span class="info-title">제출 기한</span>
+                                    <p>2024.03.01 00:00:00 ~ 2024.04.28 23:59:59</p>
+                                </li>
+                            </ul>
+                            <a href="./book/class5_book.html"  class="go-btn">과제 페이지로 이동 ></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="tab-wrap">
+                        <div class="img-box">
+                            <img src="./book/book-img.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3 class="tab-title">	캐릭터 사이트 제작하기</h3>
+                            <ul class="info">
+                                <li class="info-obj">
+                                    <span class="info-title">과제 내용</span>
+                                    <p>6차시 강의 내용을 기준으로 캐릭터를 활용한 웹사이트 제작<br /><br />
+                                        애니메이션 캐릭터. 좋아하는 영화배우 등.. 자신만의 주제로 작성
+                                    </p>
+                                </li>
+                                <li class="info-obj">
+                                    <span class="info-title">제출 기한</span>
+                                    <p>2024.03.01 00:00:00 ~ 2024.04.28 23:59:59</p>
+                                </li>
+                            </ul>
+                            <a href="./book/class5_book.html" target="_blank" class="go-btn">과제 페이지로 이동 ></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div class="tab-wrap">준비중 입니다</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>본 페이지는 상업적 목적이 아닌 <br />한양사이버대학교 웹디자인 강의 과제 제출용으로 제작되었습니다.</p>
+    </footer>
+    <script>
+        $('ul.tab-list li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+    
+            $('ul.tab-list li').removeClass('active');
+            $('.tab-content').removeClass('active');
+    
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        })
+    
+    </script>
+</body>
+
+</html>

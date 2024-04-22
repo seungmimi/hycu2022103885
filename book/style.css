@@ -1,0 +1,207 @@
+/*==========================style==========================*/
+@font-face {
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body.book {
+    background-color: #F3F9F7;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body.book header {
+    padding: 20px 50px 10px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    background-color: #797C6B;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    z-index: 99;
+}
+body.book header nav>ul {
+    display: flex;
+    gap: 20px;
+}
+body.book main {
+    margin-top: 80px;
+}
+.section-box {
+    width: 100%;
+    padding: 0 52px 116px 52px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section-box>.section-title{
+    font-size: 32px;
+    font-weight: bolder;
+    color: #797C6B;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #797C6B;
+}
+.main-content {
+    padding-top: 80px;
+}
+.main-content>p{
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    font-size: 24px;
+    text-align: center;
+    color: #797C6B;
+    margin-bottom: 40px;
+}
+.main-content>p>span {
+    display: block;
+    padding-top: 5px;
+    font-family: "Roboto", sans-serif;;
+    font-size: 12px;
+    color: #808080;
+}
+.main-content .division {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.main-content .division::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background-color: #797C6B;
+    transform: translateY(-50%);
+}
+.main-content .division>img {
+    height: 100%;
+}
+.main-content>article {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.action-box {
+    transform-style: preserve-3d;
+    perspective: 200px;
+}
+.action-box:hover .book-img-box {
+    transform: rotateY(10deg);
+}
+.book-img-box {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    transition: all 0.5s;
+}
+/* .book-img-box:hover >img{ */
+    /* transform: rotateY(10deg); */
+/* } */
+
+.book-img-box>img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.book-info-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    color: #797C6B;
+}
+
+.book-info-box .basic-info span {
+    font-size: 20px;
+    font-size: 14px;
+}
+.book-info-box .basic-info span>strong {
+    font-weight: bolder;
+}
+.book-info-box .basic-info h3 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.book-info-box .basic-info .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.book-info-box .basic-info .author>span {
+    background-color: #2B4158;
+    padding: 7px 15px;
+    border-radius: 100px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.book-info-box .more-info .info-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.book-info-box .more-info .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 0;
+    border-top: 1px solid #797C6B;
+    border-bottom: 1px solid #797C6B;
+}
+.book-info-box .buy-btn a{
+    text-align: center;
+    display: block;
+    padding: 25px 10px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #2B4158;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+.book-info-box .buy-btn a:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    background-color: #797C6B;
+}
+.book-info-box .buy-btn span {
+    color: #808080;
+    font-size: 12px;
+}
+
+.book-text .text-box>p {
+    margin-bottom: 16px;
+    color: #474747;
+}
+.book-list>ul>li {
+    display: block;
+    margin-bottom: 12px;
+    color: #474747;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 50px 10px 100px;
+    background-color: #797C6B;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}

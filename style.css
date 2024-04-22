@@ -1,0 +1,183 @@
+/*==========================style==========================*/
+@font-face {
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    max-width: 1016px;
+    padding: 100px 50px;
+    margin: 0 auto;
+}
+
+.title-bubble {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 150px;
+    background-color: #6384F3;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.title-bubble::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid #6384F3;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+header {
+    margin-bottom: 70px;
+}
+header>h1 {
+    letter-spacing: -8px;
+    font-size: 50px;
+    font-weight: 500;
+}
+header>h1>strong {
+    letter-spacing: 0px;
+    font-size: 60px;
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    color: #6384F3;
+}
+header>span {
+    font-weight: bolder;
+    color: #6E87CC;
+}
+
+.tab-list {
+    position: relative;
+    margin-left: 40px;
+}
+.tab-link {
+    position: absolute;
+    width:200px;
+    line-height: 54px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    color: #686868;
+    overflow:hidden;
+    border-radius:10px 0 0 0;
+    padding: 0 20px;
+    z-index: 31;
+}
+.deco {
+    width:200px;
+    border-radius:0px 10px 0 0;
+    background-color:#BFD0FF;
+    transform:
+    skew(12deg)
+    translate(-30px, 0px);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+.tab-link:nth-child(2){
+    left: 180px;
+    z-index: 20;
+}
+.tab-link:nth-child(3){
+    left: 360px;
+    z-index: 10;
+}
+.tab-link.active {
+    z-index: 31;
+}
+.tab-link.active .deco{
+    color: #6384F3;
+    font-weight: bold;
+    background-color: #EFF3FE;
+}
+.tab-box {
+    position: relative;
+    top: 53px;
+    background-color: #EFF3FE;
+    border-radius: 10px;
+}
+.tab-box .tab-content {
+    display: none;
+}
+.tab-box .tab-content.active {
+    display: block;
+}
+.tab-wrap {
+    padding: 50px 40px;
+    display: flex;
+    gap: 40px;
+}
+.tab-wrap .img-box {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 2 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tab-wrap .img-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tab-wrap .text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tab-title {
+    margin-bottom: 20px;
+    padding: 12px 10px;
+    text-align: center;
+    color: #6384F3;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 3px solid #6384F3;
+}
+.info .info-obj {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.info .info-obj>span {
+    flex-shrink: 0;
+    color: #6E87CC;
+    font-weight: bolder;
+}
+.info .info-obj>p {
+    color: #666;
+}
+.go-btn {
+    padding: 12px 10px;
+    display: block;
+    background-color: #6384F3;
+    border-radius: 500px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer {
+    margin-top: 138px;
+    padding: 50px 10px 100px;
+    background-color: #6E87CC;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
