@@ -1,0 +1,132 @@
+/*==========================style==========================*/
+@font-face {
+  font-family: 'Ownglyph_Dailyokja-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body.character header {
+  padding: 20px 50px 10px;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background-color: #010485;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  z-index: 99;
+}
+body.character header nav>ul {
+  display: flex;
+  gap: 20px;
+}
+body.character header nav>ul .active {
+  position: relative;
+  font-weight: bolder;
+}
+body.character header nav>ul .active::after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255,255,255,0.3);
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  z-index: -1;
+}
+body.character main {
+  margin-top: 80px;
+}
+.section-box {
+  width: 100%;
+  padding: 0 52px 116px 52px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-box>.section-title{
+  font-family: 'Ownglyph_Dailyokja-Rg';
+  font-size: 32px;
+  font-weight: bolder;
+  color: #010485;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed #010485;
+}
+.section-box.main-content {
+  text-align: center;
+  width: 100%;
+  max-width: none;
+  padding: 60px 52px;
+  margin-bottom: 60px;
+  background-color: #010485;
+}
+.section-box.main-content>img {
+  width: 100%;
+  max-width: 500px;
+}
+.section-box.about .info-box{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.info-box .img-box>img {
+  width: 100%;
+}
+.info-box .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.info-box .text-box>p {
+  text-align: center;
+}
+.info-box .text-box>img {
+  width: 100%
+}
+.section-box.about .more-info {
+  padding: 30px 40px;
+  border-radius: 20px;
+  background-color: #FCFCFA;
+  border: 3px solid #E0CC73;
+}
+.section-box.about .more-info .more-info-title{
+  margin-bottom: 10px;
+  display: block;
+  font-family: 'Ownglyph_Dailyokja-Rg';
+  font-size: 24px;
+  font-weight: bolder;
+}
+.character-list {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+.character-list .obj {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.character-list .obj>img {
+  width: 135px;
+}
+footer {
+  margin-top: 138px;
+  padding: 50px 10px 100px;
+  background-color: #000A57;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
