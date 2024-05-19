@@ -1,0 +1,310 @@
+/*==========================style==========================*/
+@font-face {
+  font-family: 'HSSanTokki20-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+    vertical-align:middle;
+    display:inline-flex;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.icon::before {
+    display:inline-block;
+    content:'';
+    vertical-align:middle;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+}
+.icon-instar{
+    width:50px;
+    height:50px;
+    background-image:url('./img/icon-instar.png');
+}
+.icon-facebook{
+  width:50px;
+  height:50px;
+  background-image:url('./img/icon-facebook.png');
+}
+.icon-kakao{
+  width:50px;
+  height:50px;
+  background-image:url('./img/icon-kakao.png');
+}
+
+
+body.portfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+body.portfolio header {
+  padding: 20px 50px 10px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #2C2E30;
+  transition: all 0.2s;
+}
+body.portfolio header.scroll {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #f5f7faec;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+body.portfolio header>h1 {
+  font-family: 'HSSanTokki20-Regular';
+}
+body.portfolio header nav>ul {
+  display: flex;
+  gap: 20px;
+}
+body.portfolio main {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 100px;
+}
+.main-wrap {
+  padding: 120px 0;
+  height: 420px;
+}
+.main-wrap > h1 {
+  font-family: 'HSSanTokki20-Regular';
+  font-size: 80px;
+  font-weight: bold;
+}
+.contnet-wrap-line {
+  padding-top: 140px;
+  margin-bottom: 100px;
+}
+.contnet-wrap-line > .box {
+  position: relative;
+  display: flex;
+  border: 1px solid #000; 
+}
+.contnet-wrap-line > .box:first-child {
+  border-bottom: none;
+}
+.contnet-wrap-line > .box .title {
+  padding: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid #000;
+}
+.contnet-wrap-line > .profile-box.box {
+  min-height: 340px;
+  padding-right: 395px;
+}
+.contnet-wrap-line > .profile-box .profile-content {
+  padding: 20px 40px;
+  align-self: center;
+}
+.contnet-wrap-line > .profile-box .profile-content>p {
+  font-size: 40px;
+  font-weight: bold;
+}
+.contnet-wrap-line > .profile-box .profile-content>strong {
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+.contnet-wrap-line > .profile-box .profile-content .profile-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contnet-wrap-line > .profile-box .profile-content .profile-info-list > li > strong {
+  font-weight: bold;
+}
+.contnet-wrap-line > .profile-box .profile-content .profile-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+}
+.contnet-wrap-line > .experience-box .experience-content {
+  padding: 20px 40px;
+  width: 100%;
+}
+.contnet-wrap-line > .experience-box .experience-content .experience-list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contnet-wrap-line > .experience-box .experience-content .experience-list > li {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.contnet-wrap-line > .experience-box .experience-content .experience-list > li > span {
+  font-size: 14px;
+  color: #999;
+}
+
+.contnet-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-top: 90px;
+}
+.contnet-wrap > .box-title {
+  font-family: 'HSSanTokki20-Regular';
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  font-size: 32px;
+}
+.contnet-wrap > .content-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contnet-wrap > .content-box.bg-none {
+  background: none;
+}
+.contnet-wrap > .content-box .content-title {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.tech-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.tech-box .tech-obj {
+  padding: 18px 28px;
+  color: #fff;
+  background-color: #2C2E30;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+.tech-box .tech-obj:hover {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  color: #2C2E30;
+  background-color: #C3CFE2;
+}
+.tech-box .tech-obj > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.tech-box .tech-obj > p {
+  font-size: 14px;
+}
+.tool-list {
+  display: flex;
+  gap: 10px;
+}
+.tool-list > li {
+  padding: 10px 20px;
+  background-color: #2C2E30;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.project-box {
+  display: flex;
+  gap: 20px;
+}
+.project-box .img-box {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 2 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.project-box .img-box>img {
+  width: 100%;
+  object-fit: cover;
+}
+.project-box .text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.project-box .tab-title {
+  margin-bottom: 20px;
+  padding: 12px 10px;
+  text-align: center;
+  color: #2C2E30;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 3px solid #2C2E30;
+}
+.project-box .info .info-obj {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.project-box .info .info-obj>span {
+  flex-shrink: 0;
+  color: #2C2E30;
+  font-weight: bolder;
+}
+.project-box .info .info-obj>p {
+  color: #666;
+}
+.project-box .go-btn {
+  padding: 12px 10px;
+  display: block;
+  background-color: #2C2E30;
+  border-radius: 500px;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.2s;
+}
+.project-box .go-btn:hover {
+  background-color: #C3CFE2;
+  color: #000;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1)
+}
+
+.contact-list {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center
+}
+
+footer {
+  margin-top: 138px;
+  padding: 50px 10px 100px;
+  background-color: #2C2E30;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}

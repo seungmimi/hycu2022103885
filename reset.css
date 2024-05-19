@@ -6,6 +6,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-break: keep-all;
 }
 body.no-scroll {
     overflow: hidden;
@@ -14,9 +15,6 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-}
-p {
-    word-break: break-all;
 }
 button, input {
     background: none;
